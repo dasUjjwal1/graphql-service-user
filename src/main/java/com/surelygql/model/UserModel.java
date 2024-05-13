@@ -1,4 +1,4 @@
-package com.surely.finance.model;
+package com.surelygql.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

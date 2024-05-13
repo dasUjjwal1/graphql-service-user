@@ -1,4 +1,4 @@
-package com.surely.finance.exception;
+package com.surelygql.exception;
 
 import graphql.GraphQLError;
 import graphql.GraphqlErrorBuilder;

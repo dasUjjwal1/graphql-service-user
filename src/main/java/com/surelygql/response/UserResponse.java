@@ -1,6 +1,6 @@
-package com.surely.finance.response;
+package com.surelygql.response;
 
-import com.surely.finance.entity.TblAddress;
+import com.surelygql.entity.TblAddress;
 import lombok.Builder;
 
 import java.math.BigInteger;

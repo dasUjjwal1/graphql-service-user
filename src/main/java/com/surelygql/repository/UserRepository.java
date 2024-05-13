@@ -1,6 +1,6 @@
-package com.surely.finance.repository;
+package com.surelygql.repository;
 
-import com.surely.finance.entity.TblUser;
+import com.surelygql.entity.TblUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

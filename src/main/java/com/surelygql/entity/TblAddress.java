@@ -1,4 +1,4 @@
-package com.surely.finance.entity;
+package com.surelygql.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.surely.finance;
+package com.surelygql;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

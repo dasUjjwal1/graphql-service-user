@@ -1,4 +1,4 @@
-package com.surely.finance;
+package com.surelygql;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

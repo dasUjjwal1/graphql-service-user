@@ -1,6 +1,5 @@
-package com.surely.finance.exception;
+package com.surelygql.exception;
 
-import java.util.HashMap;
 import java.util.Map;
 
 public class AlreadyPresent extends AbstractGraphQLException{

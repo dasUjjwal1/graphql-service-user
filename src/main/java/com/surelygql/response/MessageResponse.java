@@ -1,4 +1,4 @@
-package com.surely.finance.response;
+package com.surelygql.response;
 
 import lombok.Builder;
 import lombok.Data;

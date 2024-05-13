@@ -1,13 +1,16 @@
-package com.surely.finance.resolver;
+package com.surelygql.resolver;
 
-import com.surely.finance.entity.TblUser;
-import com.surely.finance.exception.AlreadyPresent;
-import com.surely.finance.model.UserModel;
-import com.surely.finance.response.UserResponse;
-import com.surely.finance.service.UserService;
+import com.surelygql.entity.TblUser;
+import com.surelygql.exception.AlreadyPresent;
+import com.surelygql.exception.NotFound;
+import com.surelygql.model.UserModel;
+import com.surelygql.response.MessageResponse;
+import com.surelygql.response.UserResponse;
+import com.surelygql.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.MutationMapping;
+import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
 
 @Controller
@@ -24,6 +27,10 @@ public class UserMutation {
                 .name(user.getName())
                 .email(user.getEmail())
                 .mobileNumber(user.getMobileNumber()).build();
+    }
+    @QueryMapping
+    public MessageResponse resetPasswordRequest(@Argument String email) throws NotFound {
+        return userService.resetPasswordRequest(email);
     }
 
 }
