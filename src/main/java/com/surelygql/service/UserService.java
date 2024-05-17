@@ -46,13 +46,13 @@ public class UserService {
     }
 
     public MessageResponse resetPasswordRequest(String email) throws NotFound {
-        Optional<TblUser> findUser = userRepository.findUserByEmail(email);
-        if (findUser.isEmpty()) {
-            throw new NotFound("Email not registered");
-        }
+//        Optional<TblUser> findUser = userRepository.findUserByEmail(email);
+//        if (findUser.isEmpty()) {
+//            throw new NotFound("Email not registered");
+//        }
         Map<String, String> stream = new HashMap<>();
         stream.put("email", email);
-        jedis.xadd("OTP-" + email, (StreamEntryID) null, stream);
+        jedis.xadd("stream1", StreamEntryID.NEW_ENTRY, stream);
         return MessageResponse.builder().message("Otp sent successfully").build();
     }
 }
