@@ -3,10 +3,9 @@ on ARGUMENT_DEFINITION | INPUT_FIELD_DEFINITION
 
 type Query {
     getUserById(id:ID!):UserResponse
-    resetPasswordRequest(email:String!):MessageResponse
 }
 type Mutation{
-    addUser(userModel:UserModel):UserResponse
+    sendOtp(otpModel:OtpModel):MessageResponse
 }
 type MessageResponse{
     message:String
@@ -28,6 +27,15 @@ input AddressModel{
     province:String
     municipality:String
     zip:String
+}
+enum OtpType{
+    OTP_TYPE_LOGIN,
+    OTP_TYPE_REGISTER,
+    OTP_TYPE_RESET_PASSWORD
+}
+input OtpModel{
+    email:String!@Size(min: 1,max: 100,message: "Email required")
+    otpType:OtpType!
 }
 input UserModel{
     name:String! @Size(min : 3, max : 100)
