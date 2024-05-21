@@ -2,7 +2,6 @@ package com.surelygql.service;
 
 import com.surelygql.entity.TblUser;
 import com.surelygql.exception.AlreadyPresent;
-import com.surelygql.exception.NotFound;
 import com.surelygql.model.OtpModel;
 import com.surelygql.model.UserModel;
 import com.surelygql.repository.UserRepository;

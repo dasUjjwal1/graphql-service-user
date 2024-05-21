@@ -16,9 +16,6 @@ import java.util.Map;
 public class UserMutation {
     @Autowired
     private UserService userService;
-    String s = "477571947534";
-    String b = "J33AZ8LQBAZKULTHHP7UAC8Q";
-
     @MutationMapping
     public MessageResponse sendOtp(@Argument OtpModel otpModel) throws AlreadyPresent {
         Boolean isUSerAvailable = userService.checkUser(otpModel.getEmail());
