@@ -1,4 +1,4 @@
-package com.surelygql.enums;
+package com.serviceusergql.enums;
 
 public enum OtpType {
     OTP_TYPE_LOGIN,

@@ -1,6 +1,6 @@
-package com.surelygql.model;
+package com.serviceusergql.model;
 
-import com.surelygql.enums.OtpType;
+import com.serviceusergql.enums.OtpType;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import lombok.AllArgsConstructor;

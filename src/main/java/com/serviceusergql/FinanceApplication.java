@@ -1,4 +1,4 @@
-package com.surelygql;
+package com.serviceusergql;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

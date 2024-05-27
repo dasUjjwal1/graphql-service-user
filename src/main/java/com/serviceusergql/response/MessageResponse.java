@@ -1,4 +1,4 @@
-package com.surelygql.response;
+package com.serviceusergql.response;
 
 import lombok.Builder;
 import lombok.Data;

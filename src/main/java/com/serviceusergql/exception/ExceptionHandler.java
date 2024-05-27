@@ -1,4 +1,4 @@
-package com.surelygql.exception;
+package com.serviceusergql.exception;
 
 import graphql.GraphQLError;
 import graphql.GraphqlErrorBuilder;
