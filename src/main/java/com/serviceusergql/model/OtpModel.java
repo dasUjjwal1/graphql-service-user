@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class OtpModel {
-    private String email;
+    private String mobileNumber;
     @Enumerated(EnumType.STRING)
     private OtpType otpType;
 }

@@ -28,6 +28,7 @@ type Query {
 }
 type Mutation{
     sendOtp(otpModel:OtpModel):MessageResponse
+    registerAgent(agentModel:AgentModel):MessageResponse
 }
 type MessageResponse{
     message:String
@@ -164,7 +165,10 @@ enum OtpType{
     OTP_TYPE_RESET_PASSWORD
 }
 input OtpModel{
-    email:String!@Size(min: 1,max: 100,message: "Email required")
+    mobileNumber:String!@Size(min: 1,max: 100,message: "Mobile Number required")
     otpType:OtpType!
 }
-
+input AgentModel{
+    name:String!@Size(min: 1,max: 100,message: "Name required")
+    mobileNumber:String!@Size(min: 1,max: 100,message: "Mobile Number required")
+}
