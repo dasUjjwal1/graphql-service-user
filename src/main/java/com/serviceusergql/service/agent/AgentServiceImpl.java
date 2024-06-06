@@ -43,11 +43,7 @@ public class AgentServiceImpl implements AgentService {
 
     @Override
     public MessageResponse registerAgent(AgentModel agentModel) throws Exception {
-        TblAgent tblAgent = TblAgent.builder()
-                .name(agentModel.getName())
-                .mobileNumber(agentModel.getMobileNumber())
-                .build();
-        agentRepository.save(tblAgent);
+//        agentRepository.createAgent(agentModel);
         return MessageResponse.builder().message("Agent register").build();
     }
 }

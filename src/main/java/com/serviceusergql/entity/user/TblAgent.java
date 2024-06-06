@@ -20,6 +20,7 @@ import java.util.Date;
 public class TblAgent {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(columnDefinition = "BIGINT")
     private BigInteger id;
 
     @Column(name = "name", nullable = false)

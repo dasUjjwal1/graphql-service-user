@@ -19,6 +19,7 @@ import java.util.Date;
 public class TblUser {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(columnDefinition = "BIGINT")
     private BigInteger id;
     private String userName;
     private String password;

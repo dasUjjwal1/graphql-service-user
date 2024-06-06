@@ -12,4 +12,5 @@ import lombok.NoArgsConstructor;
 public class AgentModel {
     private String name;
     private String mobileNumber;
+    private String password;
 }
