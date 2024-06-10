@@ -1,6 +1,6 @@
-package com.serviceusergql.model;
+package com.serviceusergql.global.model;
 
-import com.serviceusergql.enums.OtpType;
+import com.serviceusergql.global.enums.OtpType;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import lombok.AllArgsConstructor;

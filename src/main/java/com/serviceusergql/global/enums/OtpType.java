@@ -1,4 +1,4 @@
-package com.serviceusergql.enums;
+package com.serviceusergql.global.enums;
 
 public enum OtpType {
     OTP_TYPE_LOGIN,

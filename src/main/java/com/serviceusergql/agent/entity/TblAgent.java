@@ -1,6 +1,8 @@
-package com.serviceusergql.entity.user;
+package com.serviceusergql.agent.entity;
 
-import com.serviceusergql.enums.*;
+import com.serviceusergql.agent.enums.*;
+import com.serviceusergql.global.enums.Gender;
+import com.serviceusergql.global.enums.RelationShip;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

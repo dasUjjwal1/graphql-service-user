@@ -1,4 +1,4 @@
-package com.serviceusergql.model;
+package com.serviceusergql.agent.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

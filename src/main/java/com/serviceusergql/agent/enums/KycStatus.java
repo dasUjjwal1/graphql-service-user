@@ -1,4 +1,4 @@
-package com.serviceusergql.enums;
+package com.serviceusergql.agent.enums;
 
 public enum KycStatus {
     user_cancelled,

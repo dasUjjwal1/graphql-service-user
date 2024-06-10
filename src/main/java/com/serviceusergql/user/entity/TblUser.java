@@ -1,4 +1,4 @@
-package com.serviceusergql.entity.user;
+package com.serviceusergql.user.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 import java.math.BigInteger;
 import java.time.LocalDateTime;
 import java.util.Date;
-
 @Data
 @Entity
 @Builder
